@@ -1,0 +1,12 @@
+
+
+<h1>Here are the awesome Quotes</h1>
+@foreach(var quotes in ViewBag.Quotes)
+{
+    <div class="quote">
+        <p>"@quotes["quote"]"</p>
+        <p>@quotes["name"] - Created at @quotes["created_at"]</p>
+        <hr class="my-4">
+    </div>
+}
+<a class="btn btn-primary" href="/">Add Quote</a>
